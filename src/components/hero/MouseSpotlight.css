@@ -1,0 +1,41 @@
+.mouse-spotlight{
+
+position:fixed;
+
+width:500px;
+
+height:500px;
+
+border-radius:50%;
+
+pointer-events:none;
+
+z-index:0;
+
+background:
+
+radial-gradient(
+
+circle,
+
+rgba(108,99,255,.20) 0%,
+
+rgba(0,229,255,.12) 35%,
+
+rgba(255,215,0,.08) 60%,
+
+transparent 100%
+
+);
+
+filter:blur(45px);
+
+transition:
+
+transform .06s linear;
+
+mix-blend-mode:screen;
+
+will-change:transform;
+
+}

@@ -2,32 +2,80 @@ body{
 
 background:var(--background);
 
-color:var(--white);
+color:white;
 
-font-family:"Inter",sans-serif;
-
-}
-
-a{
-
-text-decoration:none;
-
-color:inherit;
+font-family:Inter,sans-serif;
 
 }
 
-img{
+.container{
 
-max-width:100%;
+width:min(92%,1300px);
 
-display:block;
+margin:auto;
 
 }
 
-button{
+.section{
 
-cursor:pointer;
+padding:120px 0;
 
-border:none;
+}
+
+.navbar{
+
+height:80px;
+
+display:flex;
+
+align-items:center;
+
+position:sticky;
+
+top:0;
+
+background:rgba(5,8,22,.85);
+
+backdrop-filter:blur(20px);
+
+z-index:1000;
+
+}
+
+.footer{
+
+padding:40px 0;
+
+text-align:center;
+
+color:gray;
+
+}
+@media (prefers-reduced-motion: reduce){
+
+*{
+
+animation:none !important;
+
+transition:none !important;
+
+scroll-behavior:auto !important;
+
+}
+
+}
+@media(prefers-reduced-motion:reduce){
+
+.timeline-progress-fill{
+
+transition:none;
+
+}
+
+.timeline-card{
+
+transition:none;
+
+}
 
 }

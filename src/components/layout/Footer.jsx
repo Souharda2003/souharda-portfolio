@@ -1,9 +1,23 @@
 function Footer() {
-  return (
-    <footer>
-      <p>© 2026 Souharda Saha</p>
-    </footer>
-  );
+
+    return (
+
+        <footer className="footer">
+
+            <div className="container">
+
+                © {new Date().getFullYear()}
+
+                {" "}
+
+                Souharda Saha
+
+            </div>
+
+        </footer>
+
+    );
+
 }
 
 export default Footer;

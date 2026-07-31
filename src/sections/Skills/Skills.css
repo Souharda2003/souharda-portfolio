@@ -1,0 +1,585 @@
+/* ===========================
+   SKILLS SECTION
+=========================== */
+
+.skills-section{
+    padding:120px 0;
+    position:relative;
+    overflow:hidden;
+}
+
+.skills-container{
+    width:min(1400px,92%);
+    margin:auto;
+}
+
+.skills-header{
+    text-align:center;
+    margin-bottom:70px;
+}
+
+.section-subtitle{
+    color:#7B6DFF;
+    font-size:16px;
+    font-weight:700;
+    letter-spacing:4px;
+    text-transform:uppercase;
+    margin-bottom:18px;
+}
+
+.skills-header h2{
+    font-size:58px;
+    font-weight:800;
+    margin-bottom:25px;
+    color:#fff;
+}
+
+.section-description{
+    max-width:820px;
+    margin:auto;
+    font-size:20px;
+    line-height:1.8;
+    color:#b9bdd5;
+}
+
+/* ===========================
+   TOOLBAR
+=========================== */
+
+.skills-toolbar{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+gap:25px;
+
+margin-bottom:60px;
+
+flex-wrap:wrap;
+
+}
+
+.skill-search{
+
+width:360px;
+
+height:55px;
+
+padding:0 22px;
+
+background:rgba(255,255,255,.04);
+
+border:1px solid rgba(255,255,255,.08);
+
+border-radius:16px;
+
+outline:none;
+
+color:white;
+
+font-size:15px;
+
+transition:.35s;
+
+}
+
+.skill-search:focus{
+
+border-color:#6C63FF;
+
+box-shadow:0 0 18px rgba(108,99,255,.35);
+
+}
+
+.filter-buttons{
+
+display:flex;
+
+gap:14px;
+
+flex-wrap:wrap;
+
+}
+
+.filter-buttons button{
+
+padding:12px 22px;
+
+background:rgba(255,255,255,.05);
+
+border:1px solid rgba(255,255,255,.08);
+
+border-radius:50px;
+
+cursor:pointer;
+
+color:white;
+
+font-size:14px;
+
+transition:.35s;
+
+}
+
+.filter-buttons button:hover{
+
+background:#6C63FF;
+
+border-color:#6C63FF;
+
+transform:translateY(-2px);
+
+}
+
+.filter-buttons button.active{
+
+background:linear-gradient(
+135deg,
+#6C63FF,
+#00D4FF
+);
+
+box-shadow:0 0 18px rgba(108,99,255,.45);
+
+}
+
+.skills-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(380px,1fr));
+
+gap:35px;
+
+}
+
+.skill-category{
+
+position:relative;
+
+overflow:hidden;
+
+padding:28px;
+
+border-radius:28px;
+
+background:rgba(18,22,38,.78);
+
+border:1px solid rgba(255,255,255,.08);
+
+backdrop-filter:blur(24px);
+
+transition:.45s;
+
+}
+
+.skill-category::before{
+
+content:"";
+
+position:absolute;
+
+left:-120%;
+
+top:0;
+
+width:60%;
+
+height:100%;
+
+background:linear-gradient(
+90deg,
+transparent,
+rgba(255,255,255,.08),
+transparent
+);
+
+transition:1s;
+
+}
+
+.skill-category:hover::before{
+
+left:150%;
+
+}
+
+.skill-category:hover{
+
+transform:translateY(-12px);
+
+border-color:#6C63FF;
+
+box-shadow:
+
+0 25px 60px rgba(108,99,255,.18),
+
+0 0 40px rgba(0,212,255,.08);
+
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+.category-header{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:flex-start;
+
+margin-bottom:24px;
+
+gap:15px;
+
+}
+
+.category-left{
+
+display:flex;
+
+gap:18px;
+
+align-items:center;
+
+}
+
+.category-icon{
+
+width:58px;
+
+height:58px;
+
+border-radius:18px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:28px;
+
+background:linear-gradient(
+135deg,
+rgba(108,99,255,.22),
+rgba(0,212,255,.18)
+);
+
+box-shadow:
+0 10px 25px rgba(108,99,255,.25);
+
+}
+
+/* ---------- TITLE SMALLER ---------- */
+
+.category-header h3{
+
+font-size:34px;
+
+font-weight:700;
+
+line-height:1.2;
+
+margin-bottom:6px;
+
+color:white;
+
+}
+
+.category-header p{
+
+font-size:16px;
+
+color:#b8bdd3;
+
+line-height:1.5;
+
+}
+
+.category-badge{
+
+padding:8px 16px;
+
+border-radius:30px;
+
+background:rgba(108,99,255,.12);
+
+border:1px solid rgba(108,99,255,.35);
+
+font-size:14px;
+
+font-weight:600;
+
+color:#b9c4ff;
+
+white-space:nowrap;
+
+}
+
+/* ===========================
+   CHIPS
+=========================== */
+
+.chips-container{
+
+display:flex;
+
+flex-wrap:wrap;
+
+gap:10px;
+
+margin-bottom:25px;
+
+}
+
+.skill-chip{
+
+padding:8px 14px;
+
+background:rgba(255,255,255,.05);
+
+border:1px solid rgba(255,255,255,.08);
+
+border-radius:30px;
+
+font-size:13px;
+
+transition:.35s;
+
+}
+
+.skill-chip:hover{
+
+background:#6C63FF;
+
+transform:translateY(-3px);
+
+}
+
+/* ===========================
+   SKILL CARD
+=========================== */
+
+.skill-card{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:18px 0;
+
+border-bottom:1px solid rgba(255,255,255,.06);
+
+}
+
+.skill-card:last-child{
+
+border-bottom:none;
+
+}
+
+.skill-card h4{
+
+font-size:22px;
+
+margin-bottom:6px;
+
+}
+
+.skill-card p{
+
+font-size:15px;
+
+color:#b5bdd6;
+
+}
+
+/* ===========================
+   PROGRESS CIRCLE
+=========================== */
+
+.progress-circle{
+
+position:relative;
+
+width:76px;
+
+height:76px;
+
+flex-shrink:0;
+
+}
+
+.progress-circle svg{
+
+transform:rotate(-90deg);
+
+}
+
+.circle-bg{
+
+fill:none;
+
+stroke:#242842;
+
+stroke-width:7;
+
+}
+
+.circle-progress{
+
+fill:none;
+
+stroke:#00D4FF;
+
+stroke-width:7;
+
+stroke-linecap:round;
+
+filter:drop-shadow(0 0 8px #00D4FF);
+
+transition:stroke-dashoffset .8s;
+
+}
+
+.progress-circle span{
+
+position:absolute;
+
+left:50%;
+
+top:50%;
+
+transform:translate(-50%,-50%);
+
+font-size:15px;
+
+font-weight:700;
+
+color:white;
+
+}
+
+/* ===========================
+   EMPTY
+=========================== */
+
+.empty-skills{
+
+padding:80px;
+
+text-align:center;
+
+font-size:22px;
+
+color:#9fa8c6;
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+.skills-header h2{
+
+font-size:42px;
+
+}
+
+.skills-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.category-header{
+
+flex-direction:column;
+
+}
+
+.skill-search{
+
+width:100%;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.skill-card{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:18px;
+
+}
+
+.progress-circle{
+
+align-self:flex-end;
+
+}
+
+.category-header h3{
+
+font-size:28px;
+
+}
+
+}
+.skill-title{
+
+display:flex;
+
+align-items:center;
+
+gap:10px;
+
+margin-bottom:6px;
+
+}
+
+.featured-tag{
+
+padding:4px 10px;
+
+border-radius:20px;
+
+font-size:11px;
+
+font-weight:600;
+
+background:
+
+rgba(0,229,255,.12);
+
+border:
+
+1px solid rgba(0,229,255,.25);
+
+color:#00E5FF;
+
+}
+
+.experience-level{
+
+color:#999;
+
+font-size:14px;
+
+}

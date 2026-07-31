@@ -1,0 +1,38 @@
+.scroll-indicator{
+position:absolute;
+left:50%;
+bottom:35px;
+transform:translateX(-50%);
+width:34px;
+height:58px;
+border:1px solid rgba(83, 8, 8, 0.902);
+border-radius:30px;
+display:flex;
+justify-content:center;
+padding-top:10px;
+}
+.scroll-indicator span{
+width:7px;
+height:7px;
+border-radius:50%;
+background:#FFD700;
+animation:scrollMove 1.8s infinite;
+}
+@keyframes scrollMove{
+0%{
+opacity:0;
+transform:translateY(0);
+}
+50%{
+opacity:1;
+}
+100%{
+opacity:0;
+transform:translateY(20px);
+}
+}
+@media(max-width:992px){
+.scroll-indicator{
+display:none;
+}
+}
