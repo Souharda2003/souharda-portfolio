@@ -1,16 +1,5 @@
-function SearchBox({ value, onChange }) {
+function SearchBox() {
 
-    return (
-
-        <input
-        
-            className="skill-search"
-            placeholder="Search technologies..."
-            value={value}
-            onChange={onChange}
-        />
-
-    );
 
 }
 

@@ -78,4 +78,30 @@ transition:none;
 
 }
 
+}/* Hide Scrollbar (Chrome, Edge, Safari) */
+
+::-webkit-scrollbar{
+
+width:0;
+
+height:0;
+
+display:none;
+
+}
+
+/* Firefox */
+
+html{
+
+scrollbar-width:none;
+
+}
+
+/* IE */
+
+body{
+
+-ms-overflow-style:none;
+
 }

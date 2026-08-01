@@ -40,12 +40,21 @@ const navigation = [
     title: "Achievements",
     link: "#achievements",
   },
-
+{
+id:8,
+title:"Learning",
+link:"#certifications"
+},
   {
-    id: 8,
+    id: 9,
     title: "Contact",
-    link: "#contact",
+    link: "#contact"
   },
+  {
+    id:10,
+    title:"Resume",
+    link:"#resume"
+  }
 ];
 
 export default navigation;

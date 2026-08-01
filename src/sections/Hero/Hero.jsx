@@ -44,11 +44,6 @@ function Hero() {
             {heroData.greeting}
           </motion.span>
 
-          <motion.div variants={fadeUp}>
-            <AvailabilityBadge
-              status={heroData.availability.status}
-            />
-          </motion.div>
 
           <motion.h1 variants={fadeUp}>
             {heroData.name}
@@ -64,6 +59,12 @@ function Hero() {
             {heroData.description}
           </motion.p>
 
+          <motion.div variants={fadeUp}>
+            <AvailabilityBadge
+              status={heroData.availability.status}
+            />
+          </motion.div>
+          
           <motion.div variants={fadeUp}>
             <HeroButtons
               buttons={heroData.buttons}

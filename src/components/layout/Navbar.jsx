@@ -6,11 +6,26 @@ import useActiveSection from "../../hooks/useActiveSection";
 import { IoClose } from "react-icons/io5";
 import useScroll from "../../hooks/useScroll";
 import navigation from "../../data/navigation";
-
+import ResumePreviewModal from "../resume/ResumePreviewModal";
+import useResumeModal from "../../hooks/useResumeModal";
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const active = useActiveSection();
 const scrolled = useScroll();
+const{
+
+open,
+
+selected,
+
+setSelected,
+closeModal
+
+}
+
+=
+
+useResumeModal();
 useEffect(() => {
   if (menuOpen) {
     document.body.style.overflow = "hidden";
@@ -81,14 +96,21 @@ active === item.link.replace("#","")
 
         </nav>
 
-        <button
-          className="resume-btn"
-        >
 
-          Resume
+<ResumePreviewModal
+    isOpen={open}
+    onClose={closeModal}
+    onPreview={setSelected}
+/>
 
-        </button>
-
+{
+    selected && (
+        <ResumePreviewModal
+            file={selected.file}
+            onClose={() => setSelected(null)}
+        />
+    )
+}
        <button
   className={`menu-btn ${menuOpen ? "active" : ""}`}
   onClick={toggleMenu}

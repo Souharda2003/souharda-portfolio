@@ -28,13 +28,13 @@ const heroData = {
     id: 2,
     name: "LinkedIn",
     icon: "linkedin",
-    url: "https://linkedin.com/in/Souharda.Saha.7",
+    url: "https://www.linkedin.com/in/souharda-saha/",
   },
   {
     id: 3,
-    name: "Email",
-    icon: "mail",
-    url: "mailto:souharda947@yahoo.com",
+    name: "Leetcode",
+    icon: "leetcode",
+    url: "https://leetcode.com/u/Souhardas/",
   },
 ],
 floatingCards: [
@@ -49,9 +49,9 @@ subtitle:"Frontend",
 
 icon:"⚛️",
 
-top:"3%",
+top:"-13%",
 
-left:"4%",
+left:"-14%",
 
 delay:"0s",
 
@@ -69,9 +69,9 @@ subtitle:"Backend",
 
 icon:"🟢",
 
-top:"3%",
+top:"-13%",
 
-right:"4%",
+right:"-14%",
 
 delay:"1s",
 
@@ -89,9 +89,9 @@ subtitle:"Database",
 
 icon:"🗄️",
 
-bottom:"1%",
+bottom:"-13%",
 
-left:"4%",
+left:"-14%",
 
 delay:"2s",
 
@@ -109,9 +109,9 @@ subtitle:"Data Science",
 
 icon:"🧠",
 
-bottom:"1%",
+bottom:"-13%",
 
-right:"4%",
+right:"-14%",
 
 delay:"3s",
 
@@ -132,8 +132,8 @@ speed:.03
     },
 
     secondary: {
-      text: "Download Resume",
-      link: "/resume.pdf",
+      text: "View Resume",
+      link: "#resume",
     },
   },
   
